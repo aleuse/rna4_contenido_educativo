@@ -1,0 +1,14 @@
+quality_review_task:
+  description: >
+    Review all generated materials (class notes, learning objectives, practice problems, 
+    discussion questions, and resource recommendations) to ensure academic rigor, clarity, 
+    and adherence to domain-specific terminology. Improve technical accuracy, logical 
+    structure, and coherence across documents. The output should be in the same language as the course syllabus.
+    Ask for human input.
+    These are the generated materials:
+    {generated_materials}
+  expected_output: >
+    A refined version of detailed class notes, learning objectives, practice problems, discussion questions and 
+    recommended readings and resources with enhanced academic quality, precise terminology, and consistent structure,
+    written in the same language as the course syllabus.
+  agent: reviewer
