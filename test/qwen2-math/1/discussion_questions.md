@@ -1,0 +1,8 @@
+1. In what ways do bio inspirados systems, such as cellular automata, reflect real-world processes and how might these reflections influence their applications in optimization problems? 
+2. How do the different bio-inspired algorithms (evolutionary algorithms, ant colonies, andswarm intelligence) model natural phenomena, and what unique properties do each algorithm's model possess?
+3. How do artificial neural networks, particularly those inspired by the structure of a mammalian brain's neurons, differ from traditional computational models in their approach to processing information? 
+4. In applying neural networks to tabular data for tasks such as regression, time series analysis, and classification, what limitations might these approaches have, and how can they be overcome?
+5. When considering advanced topics in deep learning, such as stable diffusion processes and transformer networks, what new capabilities or challenges do these approaches introduce compared to traditional methods? 
+6. How does the concept of transfer learning help address the issue of data scarcity in deep learning applications, and can you provide an example of its successful implementation?
+7. In the context of reinforcement learning, how do reward functions and exploration strategies impact an agent's ability to learn optimal behavior, and what role does prior knowledge play in this process? 
+8. How might the principles of game theory be applied to analyze strategic interactions within multi-agent systems, such as those found in reinforcement learning applications?

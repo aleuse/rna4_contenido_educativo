@@ -1,0 +1,8 @@
+1. ¿Cómo pueden los algoritmos evolutivos y las colonias de hormigas ser utilizados en problemas de optimización complejos y qué ventajas y desventajas presentan cada uno de ellos?
+2. En el contexto de la introducción a las redes neuronales, analicemos el modelo de la neurona de los mamíferos: ¿Cuáles son las similitudes y diferencias entre esta estructura biológica y una red neuronal artificial?
+3. Explique cuál es la diferencia entre el aprendizaje supervisado y no supervisado en el contexto del perceptrón y el backpropagation, y discuta sus aplicaciones prácticas.
+4. Analiza diferentes métodos de aplicación de redes neuronales a datos tabulares: ¿Qué tipos de problemas de regresión, series de tiempo y clasificación se pueden abordar más efectivamente con estas técnicas?
+5. En el ámbito del aprendizaje profundo, ¿cuál es la importancia de la aumentación de datos y cómo impacta en la capacidad de las redes neuronales convolucionales para aprender de imágenes?
+6. Explora las diferencias entre el aprendizaje por refuerzo, el aprendizaje adversarial y la difusión estable (Stable Diffusion), discutiendo sus aplicaciones y casos de uso específicos.
+7. ¿Cómo afectan las redes neuronales recurrentes y los transformers en la procesamiento de datos secuenciales y en qué campos de la inteligencia artificial se han vuelto instrumentos fundamentales?
+8. Considerando todas las temáticas abordadas en el curso, ¿cuáles crees que son los principales desafíos y oportunidades actuales para el desarrollo de sistemas bioinspirados y neuronales en el contexto de la optimización y el aprendizaje automático?

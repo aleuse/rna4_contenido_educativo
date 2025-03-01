@@ -1,0 +1,8 @@
+1. ¿Cómo influencia la evolución de los algoritmos evolutivos en problemas complejos de optimización, y en qué aspectos se diferencian de otros métodos bioinspirados como las colonias de hormigas?
+2. En el contexto de las redes neuronales, ¿cuál es la relevancia del modelo de la neurona de los mamíferos y cómo se ha adaptado para aplicarlo a problemas reales?
+3. Analicemos la eficacia del método backpropagation en la mejora de perceptrones; ¿en qué situaciones este método es más efectivo y en cuáles puede fallar?
+4. Discutamos las diferencias entre regresión, series de tiempo y clasificación en el contexto de la aplicación de redes neuronales a datos tabulares; ¿cuál es la ventaja de utilizar cada una de estas técnicas?
+5. Expliquemos el concepto de aprendizaje profundo y cómo los frameworks de trabajo, como Aumentación de Datos, han contribuido a su desarrollo.
+6. Enfoquémonos en las redes neuronales convolucionales: ¿cómo se diferencian de las redes neuronales estándar y cuáles son sus aplicaciones principales en imágenes?
+7. Analicemos el papel del aprendizaje por refuerzo y el aprendizaje adversarial en el campo de la inteligencia artificial; ¿cuál es su impacto en la evolución de los sistemas bioinspirados?
+8. En el ámbito de las redes neuronales recurrentes y transformers, ¿cómo estas estructuras han mejorado la capacidad de procesamiento de datos secuenciales y cuáles son sus aplicaciones prácticas?

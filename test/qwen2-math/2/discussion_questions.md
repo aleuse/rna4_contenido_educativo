@@ -1,0 +1,9 @@
+1. In the unit on "Optimización con métodos bioinspirados," how do the algorithms inspired by natural systems (such as Algoritmos Evolutivos, Colonias de hormigas, and Inteligencia de enjambres) differ in their approach to problem-solving compared to traditional optimization methods? Can you provide an example of a real-world problem that each of these algorithms could solve more effectively than others?
+
+2. How does the concept of a "neurona" in biological systems inspire the architecture and function of artificial neural networks (ANNs)? Discuss the role of perceptrones, backpropagation, and the differences between feedforward and recurrent neural networks in emulating aspects of biological neural processing.
+
+3. When applying artificial neural networks to tabular data, such as in regression analysis or classification tasks, what unique challenges do you face compared to using ANNs for image or speech recognition? How might these challenges influence the choice of network architecture and training methods?
+
+4. In the section on "Aprendizaje profundo y frameworks de trabajo," how does the use of frameworks like stable diffusion and recurrent neural networks ( transformers) contribute to advancements in deep learning? Can you provide an example of a real-world application where such frameworks have been particularly effective, and explain why they are well-suited for that task?
+
+5. How do the principles of bioinspired optimization algorithms and artificial neural networks intersect in solving complex problems? Can you discuss any potential limitations or drawbacks when combining these approaches, and suggest strategies to overcome them?

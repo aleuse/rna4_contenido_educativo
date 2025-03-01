@@ -1,0 +1,15 @@
+*   **Libros**
+    *   "Sistemas bioinspirados: el juego de la vida" de J. Bongard: Este libro introduce a los estudiantes al mundo de los sistemas bioinspirados y su aplicación en problemas reales, proporcionándoles una base sólida para entender cómo los mecanismos biológicos pueden ser utilizados como inspiración para resolver desafíos tecnológicos.
+    *   "Optimización con métodos bioinspirados" de M. Dorigo: Este libro es un clásico en el campo de la optimización y proporciona una visión general exhaustiva de los métodos bioinspirados, incluyendo algoritmos evolutivos, colonias de hormigas y inteligencia de enjambres.
+    *   "Introducción a las redes neuronales: el modelo de la neurona de los mamíferos" de K. Fukushima: Este libro proporciona una visión general de las redes neuronales y su aplicación en problemas reales, incluyendo la introducción al modelo de la neurona de los mamíferos.
+    *   "Aprendizaje profundo y frameworks de trabajo" de Y. LeCun: Este libro es un clásico en el campo del aprendizaje profundo y proporciona una visión general exhaustiva de los frameworks de trabajo más comunes, incluyendo aumentación de datos, redes neuronales convolucionales y aplicaciones en imágenes.
+*   **Artículos científicos**
+    *   "Un sistema bioinspirado para la optimización de la producción de combustible" (Journal of Bio-inspired Optimization): Este artículo presenta un ejemplo de cómo se pueden utilizar los sistemas bioinspirados para resolver problemas reales, incluyendo la optimización de la producción de combustible.
+    *   "Una introducción a las redes neuronales: conceptos y aplicaciones" (Neural Networks): Este artículo proporciona una visión general de las redes neuronales y su aplicación en problemas reales, incluyendo la introducción al modelo de la neurona de los mamíferos.
+    *   "Aprendizaje profundo con redes neuronales convolucionales: un estudio de caso" (Journal of Machine Learning Research): Este artículo presenta un ejemplo de cómo se pueden utilizar las redes neuronales convolucionales para resolver problemas reales, incluyendo la clasificación de imágenes.
+*   **Cursos en línea**
+    *   "Sistemas bioinspirados" del Coursera: Este curso proporciona una visión general del mundo de los sistemas bioinspirados y su aplicación en problemas reales, incluyendo algoritmos evolutivos, colonias de hormigas y inteligencia de enjambres.
+    *   "Introducción a las redes neuronales" del edX: Este curso proporciona una visión general de las redes neuronales y su aplicación en problemas reales, incluyendo la introducción al modelo de la neurona de los mamíferos.
+*   **Videos**
+    *   "Sistemas bioinspirados: un juego de vida" (YouTube): Este video presenta un ejemplo de cómo se pueden utilizar los sistemas bioinspirados para resolver problemas reales, incluyendo la optimización de la producción de combustible.
+    *   "Aprendizaje profundo con redes neuronales convolucionales" (TED-Ed): Este video proporciona una visión general de las redes neuronales convolucionales y su aplicación en problemas reales, incluyendo la clasificación de imágenes.
