@@ -4,18 +4,37 @@ import warnings
 import asyncio
 
 # from education_content_agent.crew import 
-from crew import NotesObjectivesAgent
-from crew2 import PracticesProblemsAgent
-from crew3 import DiscussQuestionsAgent 
-from crew4 import ResourceRecommendationAgent
-from crew5 import QualityReviewAgent
+from notes_objectives_crew import NotesObjectivesAgent
+from practice_problems_crew import PracticesProblemsAgent
+from discussion_questions_crew import DiscussQuestionsAgent 
+from resource_recommendation_crew import ResourceRecommendationAgent
+from quality_review_crew import QualityReviewAgent
+from teaching_style_analysis_crew import TeachingStyleAgent
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
-# This main file is intended to be a way for you to run your
-# crew locally, so refrain from adding unnecessary logic into this file.
-# Replace with inputs you want to test with, it will automatically
-# interpolate any tasks and agents information
+def read_results():
+    with open("temp/class_notes.md", "r", encoding='utf-8') as file:
+        class_notes = file.read()
+    with open("temp/learning_objectives.md", "r", encoding='utf-8') as file:
+        learning_objectives = file.read()
+    with open("temp/discussion_questions.md", "r", encoding='utf-8') as file:
+        discussion_questions = file.read()
+    with open("temp/resource_recommendation.md", "r", encoding='utf-8') as file:
+        resource_recommendations = file.read()
+    
+    results = "\n"
+    results += "# Class Notes\n"
+    results += class_notes + "\n"
+    results += "# Learning Objectives\n"
+    results += learning_objectives + "\n"
+    results += "# Discussion Questions\n"
+    results += discussion_questions + "\n"
+    results += "# Resource Recommendations\n"
+    results += resource_recommendations + "\n"
+    return results
+    
+
 
 course_plan = """
 Conocimientos Específicos
@@ -46,12 +65,25 @@ e. Difusión estable (Stable Diffusion)
 f. Redes neuronales recurrentes y transformers
 """
 
-async def async_multiple_crews():
+def run_teaching_style_analysis():
+    inputs = {
+        'course_plan': course_plan,
+    }
+    
+    try:
+        result = TeachingStyleAgent().teaching_style_analysis_crew().kickoff(inputs=inputs)
+    except Exception as e:
+        raise Exception(f"An error occurred while running the crew: {e}")
+    
+    return result.raw
+
+async def async_multiple_crews(course_plan, teaching_style_analysis):
     """
     Run the crew.
     """
     inputs = {
         'course_plan': course_plan,
+        'teaching_style_analysis': teaching_style_analysis,
     }
     
     try:
@@ -61,12 +93,16 @@ async def async_multiple_crews():
         result_4 = ResourceRecommendationAgent().resource_recommendation_crew().kickoff_async(inputs=inputs)
         
         results = await asyncio.gather(result_1, result_2, result_3, result_4)
-        
-        # inputs = {"generated_materials" : " ".join([result.raw for result in results])}
-        # result = QualityReviewAgent().quality_review_crew().kickoff(inputs=inputs)
-        
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")
+    
+# def run():
+#     results = read_results()
+#     print(f"Results: {results}")
+#     inputs = {"generated_materials" : results}
+#     QualityReviewAgent().quality_review_crew().kickoff(inputs=inputs)
 
 if __name__ == "__main__":
-    asyncio.run(async_multiple_crews())
+    teaching_style_analysis = run_teaching_style_analysis()
+    asyncio.run(async_multiple_crews(course_plan, teaching_style_analysis))
+    # run()

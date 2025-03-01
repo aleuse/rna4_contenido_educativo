@@ -1,0 +1,14 @@
+resource_recommendation_task:
+  description: >
+    Identify high-quality complementary readings and resources based on the topics outlined in the course syllabus. 
+    These may include books, research articles, online courses, and videos. Ensure academic rigor, precision, 
+    and adherence to domain-specific terminology.
+    The output should be in the same language as identified in the teaching style analysis.
+    This is the course syllabus: 
+    {course_plan}
+    This is the detected teaching style and language: 
+    {teaching_style_analysis}
+  expected_output: >
+    A list of 10 recommended readings and resources, each with a brief description and its relevance to the course.
+    **The response must be formatted in Markdown and should not contain additional comments or thoughts from the agent.**
+  agent: curator

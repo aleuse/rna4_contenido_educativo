@@ -1,0 +1,30 @@
+class_notes_task:
+  description: >
+    Extract and organize detailed class notes from the course syllabus. Identify key topics, concepts, and definitions, 
+    ensuring clarity, coherence, academic rigor, and adherence to domain-specific terminology.
+    **This task is separate from learning objectives. Do not mix class notes with learning objectives.**
+    The output should be in the same language as identified in the teaching style analysis.
+    This is the course syllabus: 
+    {course_plan}
+    This is the detected teaching style and language: 
+    {teaching_style_analysis}
+  expected_output: >
+    A structured document with comprehensive class notes, including explanations, examples, and key takeaways for each section of the syllabus.
+    **The response must be formatted in Markdown and should not contain additional comments or thoughts from the agent.**
+  agent: scholar
+
+learning_objectives_task:
+  description: >
+    Identify and formulate clear learning objectives for each topic found in the course syllabus. These objectives should 
+    describe what students should achieve after studying the material. Ensure academic rigor, precision, and 
+    domain-specific accuracy.
+    **This task is separate from class notes. Do not mix learning objectives with class notes.**
+    The output should be in the same language as identified in the teaching style analysis.
+    This is the course syllabus: 
+    {course_plan}
+    This is the detected teaching style and language: 
+    {teaching_style_analysis}
+  expected_output: >
+    A list of well-defined learning objectives for each major section of the syllabus, written in the same language as the course syllabus.
+    **The response must be formatted in Markdown and should not contain additional comments or thoughts from the agent.**
+  agent: scholar

@@ -1,0 +1,13 @@
+discussion_questions_task:
+  description: >
+    Analyze the course syllabus and develop thought-provoking discussion questions that encourage critical thinking and debate.
+    Ensure academic rigor, precise terminology, and alignment with the instructor’s teaching style.
+    The output should be in the same language as identified in the teaching style analysis.
+    This is the course syllabus: 
+    {course_plan}
+    This is the detected teaching style and language: 
+    {teaching_style_analysis}
+  expected_output: >
+    A list of 5-8 discussion questions designed to spark meaningful conversations, written in the same language as the course syllabus.
+    The response must be formatted in Markdown and should not contain additional comments or thoughts from the agent.
+  agent: debater

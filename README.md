@@ -1,54 +1,111 @@
-# EducationContentAgent Crew
+# 📚 Agente Inteligente para Generación de Contenido Educativo
 
-Welcome to the EducationContentAgent Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+---
 
-## Installation
+## 🎯 **Objetivo del Proyecto**
 
-Ensure you have Python >=3.10 <3.13 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+Desarrollar un **agente inteligente** que asista en la **creación de contenido educativo**, automatizando la generación de materiales didácticos para mejorar la enseñanza y el aprendizaje.
 
-First, if you haven't already, install uv:
+## 📌 **Objetivos Específicos**
 
-```bash
-pip install uv
-```
+El agente deberá ser capaz de:
 
-Next, navigate to your project directory and install the dependencies:
+- **Analizar y comprender** programas de curso en formatos comunes (PDF, TXT, DOCX).
+- **Generar materiales educativos**, incluyendo:
+  - 📝 **Notas de clase** detalladas para cada tema.
+  - 🔢 **Problemas de práctica** con soluciones.
+  - ❓ **Preguntas para discusión** en clase.
+  - 🎯 **Objetivos de aprendizaje** claros y estructurados.
+  - 📖 **Lecturas y recursos sugeridos** para profundización.
 
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
-crewai install
-```
-### Customizing
+---
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+## 📂 **Estructura del Proyecto**
 
-- Modify `src/education_content_agent/config/agents.yaml` to define your agents
-- Modify `src/education_content_agent/config/tasks.yaml` to define your tasks
-- Modify `src/education_content_agent/crew.py` to add your own logic, tools and specific args
-- Modify `src/education_content_agent/main.py` to add custom inputs for your agents and tasks
+### 🧠 **Agentes y Tareas**
+- **Ubicación:** `src/education_content_agent/config`
+- **Descripción:**
+  - **Prompts para los agentes**, con:
+    - Rol específico.
+    - Objetivo principal.
+    - Contexto relevante.
+  - **Prompts para las tareas**, con:
+    - Descripción detallada.
+    - Salida esperada.
+    - Agente encargado.
 
-## Running the Project
+### 🛠️ **Herramientas**
+- **Ubicación:** `src/education_content_agent/tools`
+- **Descripción:** Módulos personalizados para:
+  - **Navegar y extraer contenido** de páginas web.
+  - **Procesar información** relevante para los materiales educativos.
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+### 📜 **Scripts Principales**
+- **Ubicación:** `src/education_content_agent`
+- **Descripción:** Contiene los scripts que gestionan la ejecución de los agentes y sus tareas.
 
-```bash
-$ crewai run
-```
+### ✅ **Pruebas**
+- **Ubicación:** `test`
+- **Descripción:** Contiene pruebas realizadas con diferentes modelos de lenguaje (LLMs) para evaluar el desempeño del agente.
 
-This command initializes the education_content_agent Crew, assembling the agents and assigning them tasks as defined in your configuration.
+---
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+## ⚙️ **Requisitos del Sistema**
 
-## Understanding Your Crew
+- **Lenguaje:** Python 3.10+
+- **Librerías principales:**
+  - [`CrewAI`](https://github.com/crewai/crewai) → Gestión de agentes.
+  - [`DuckDuckGo-Search`](https://pypi.org/project/duckduckgo-search/) → Búsquedas web.
+  - [`Markdownify`](https://pypi.org/project/markdownify/) → Conversión de HTML a Markdown.
+- 📌 **Revisar** [`requirements.txt`](requirements.txt) para más detalles.
+- **Ollama**: [Descargar e instalar](https://ollama.com/download).
 
-The education_content_agent Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+---
 
-## Support
+## 🚀 **Cómo Ejecutar el Proyecto**
 
-For support, questions, or feedback regarding the EducationContentAgent Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+1. **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/aleuse/rna4_contenido_educativo.git
+    cd rna4_contenido_educativo
+    ```
 
-Let's create wonders together with the power and simplicity of crewAI.
+2. **Crear y activar un entorno virtual:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # En macOS/Linux
+    venv\Scripts\activate     # En Windows
+    ```
+
+3. **Instalar las dependencias:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Ejecutar localmente el modelo deseado:**
+    ```bash
+    ollama run llama3.2
+    ```
+
+5. **Configurar los parámetros:**  
+   Crear un archivo `.env` en la carpeta raíz y definir las siguientes variables:
+
+    ```ini
+    BASE_URL=http://localhost:11434  # URL donde se ejecuta el modelo
+    MODEL=ollama/NombreDelModelo
+    MAX_TOKENS=...
+    MAX_RPM=...
+    TEMPERATURE=...
+    ```
+
+6. **Ejecutar el código:**
+    ```bash
+    python src/education_content_agent/main.py
+    ```
+
+---
+
+## 📌 **Notas Adicionales**
+- Asegúrate de que **Ollama esté ejecutándose** antes de lanzar el script.
+- Se recomienda realizar **pruebas con diferentes modelos** para evaluar cuál ofrece mejores resultados en la generación de contenido.
+

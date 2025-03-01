@@ -1,0 +1,13 @@
+practice_problems_task:
+  description: >
+    Design a set of practice problems based on the main concepts outlined in the course syllabus. Problems should be structured 
+    at different difficulty levels and include complete solutions. Ensure academic rigor, precision, and domain-specific accuracy.
+    The output should be in the same language as identified in the teaching style analysis.
+    This is the course syllabus: 
+    {course_plan}
+    This is the detected teaching style and language: 
+    {teaching_style_analysis}
+  expected_output: >
+    A document containing 5-10 practice problems with step-by-step solutions, written in the same language as the course syllabus.
+    **The response must be formatted in Markdown and should not contain additional comments or thoughts from the agent.**
+  agent: problemsolver

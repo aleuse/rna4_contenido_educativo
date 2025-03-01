@@ -1,0 +1,11 @@
+teaching_style_analysis_task:
+  description: >
+    Analyze the course syllabus to determine the instructor’s teaching style, preferred structuring of content, and primary language used. 
+    Identify whether the course follows a theoretical, applied, discussion-based, problem-solving, or mixed approach.
+    The detected language should be explicitly stated to ensure all generated content remains consistent.
+    This is the course syllabus: 
+    {course_plan}
+  expected_output: >
+    A structured summary that includes the detected teaching style, instructor preferences, and course language.
+    The response must be formatted in Markdown and should not contain additional comments or thoughts from the agent.
+  agent: analyzer

@@ -1,0 +1,15 @@
+quality_review_task:
+  description: >
+    Review all generated materials (class notes, learning objectives, practice problems, 
+    discussion questions, and resource recommendations) to ensure academic rigor, clarity, 
+    and adherence to domain-specific terminology. Improve technical accuracy, logical 
+    structure, and coherence across documents. Ensure Markdown formatting and consistency 
+    with the instructor’s teaching style.
+    These are the generated materials:
+    {generated_materials}
+  expected_output: >
+    A refined Markdown-formatted document that contains: detailed class notes, learning objectives, 
+    practice problems, discussion questions, and recommended readings and resources. 
+    The document should have enhanced academic quality, precise terminology, and a consistent structure, 
+    written in the same language as the generated materials.
+  agent: reviewer
