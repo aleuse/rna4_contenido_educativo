@@ -1,0 +1,2 @@
+El aprendizaje profundo es una técnica fundamental en la inteligencia artificial que permite a las redes neuronales aprender a partir de grandes conjuntos de datos. El aprendizaje profundo se ha vuelto importante para el desarrollo de algoritmos de inteligencia artificial que pueden procesar y analizar grandes cantidades de información. Se espera que el aprendizaje profundo siga siendo una área fundamental en la inteligencia artificial en el futuro.
+```

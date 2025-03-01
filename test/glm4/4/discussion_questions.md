@@ -1,0 +1,7 @@
+1. **¿Cómo se integran los algoritmos evolutivos y las colonias de hormigas en la optimización de problemas complejos, y en qué aspectos difieren estos métodos bioinspirados entre sí?**
+2. **Analiza el papel de la neurona de los mamíferos como modelo para redes neuronales y discute sus limitaciones cuando se aplica a problemas más complejos de percepción.**
+3. **Explora las diferencias y similitudes entre regresión, series de tiempo y clasificación en el contexto de la aplicación de redes neuronales a datos tabulares. En qué casos es más efectivo cada uno?**
+4. ** Debate sobre los beneficios y desafíos de la aumentación de datos en el aprendizaje profundo, y cómo afecta esta práctica la capacidad de generalización de un modelo.**
+5. **Analiza las diferencias entre redes neuronales convolucionales y recurrentes en su aplicación a imágenes y textos respectivamente, y discute cuándo es más adecuado cada tipo de red.**
+6. ** Discute el impacto de los frameworks de trabajo en la implementación de técnicas de aprendizaje profundo, y ¿en qué aspectos específicos pueden influir positivamente o negativamente en el rendimiento de un modelo?**
+7. **Explora las implicaciones éticas del uso de técnicas como el aprendizaje por refuerzo, el aprendizaje adversarial y la difusión estable en entornos donde se manejan datos sensibles o información personal.**

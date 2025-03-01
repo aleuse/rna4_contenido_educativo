@@ -1,0 +1,8 @@
+1. ¿Cuáles son los principales desafíos y oportunidades que presenta el uso de sistemas bioinspirados como algoritmos evolutivos y colonias de hormigas para resolver problemas de optimización?
+2. ¿Cómo puede la introducción al modelo de neurona de mamíferos contribuir a la comprensión y aplicación efectiva de perceptrones y backpropagation en redes neuronales artificiales? 
+3. ¿Qué habilidades y competencias se requieren para aplicar con éxito redes neuronales a diferentes tipos de datos, como regresión, series de tiempo y clasificación?
+4. ¿Cómo pueden las técnicas de aprendizaje profundo (como aumento de datos, redes convolucionales, refuerzo y adversarial) mejorar la precisión y robustez de los modelos de inteligencia artificial?
+5. ¿Cuáles son los retos principales en el desarrollo y aplicación práctica de frameworks de deep learning como diffusion estable y transformers para resolver problemas complejos?
+6. En tu opinión, ¿cuál es la relación más prometedora entre sistemas bioinspirados, redes neuronales y aprendizaje profundo para futuras investigaciones e innovaciones tecnológicas?  
+7. ¿Cómo podrían las técnicas de optimización bioinspiradas (evolutivas o de hormigas) ser aplicadas para mejorar la eficiencia de los algoritmos de deep learning en términos de recursos y desempeño?
+8. Analizando los componentes clave del curso, ¿cuáles son tres conceptos importantes que consideras todos los estudiantes deben comprender sobre sistemas bioinspirados y redes neuronales para tener éxito en este campo?
