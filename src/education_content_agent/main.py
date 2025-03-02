@@ -11,11 +11,15 @@ from resource_recommendation_crew import ResourceRecommendationAgent
 # from quality_review_crew import QualityReviewAgent
 from teaching_style_analysis_crew import TeachingStyleAgent
 from extract_info import DocumentExtractor
+from md2pdf import DocumentConverter
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
 # Crear una instancia del extractor
 extractor = DocumentExtractor(idioma='es')
+
+# Crear una instancia del conversor
+converter = DocumentConverter()
 
 RUTA_INPUT = "Docs"
 
@@ -30,57 +34,16 @@ def extract_text(ruta):
     
     return texto
 
-def read_results():
-    with open("temp/class_notes.md", "r", encoding='utf-8') as file:
-        class_notes = file.read()
-    with open("temp/learning_objectives.md", "r", encoding='utf-8') as file:
-        learning_objectives = file.read()
-    with open("temp/discussion_questions.md", "r", encoding='utf-8') as file:
-        discussion_questions = file.read()
-    with open("temp/resource_recommendation.md", "r", encoding='utf-8') as file:
-        resource_recommendations = file.read()
+def convert_results():
+    """
+    Convierte el contenido Markdown a PDF.
+    """
+    try:
+        # Generar el PDF
+        converter.markdown_to_pdf("education_materials.pdf")
+    except Exception as e:
+        raise Exception(f"Error al convertir a PDF: {e}")
     
-    results = "\n"
-    results += "# Class Notes\n"
-    results += class_notes + "\n"
-    results += "# Learning Objectives\n"
-    results += learning_objectives + "\n"
-    results += "# Discussion Questions\n"
-    results += discussion_questions + "\n"
-    results += "# Resource Recommendations\n"
-    results += resource_recommendations + "\n"
-    return results
-    
-
-
-course_plan = """
-Conocimientos Específicos
-(Programa detallado)
-
-Sistemas bioinspirados: el juego de la vida
-
-Optimización con métodos bioinspirados
-a. Algoritmos Evolutivos
-b. Colonias de hormigas
-c. Inteligencia de enjambres
-
-Introducción a las redes neuronales: el modelo de la neurona de los mamíferos
-
-Perceptrones y backpropagation
-
-Aplicación de redes neuronales a datos tabulares
-a. Regresión
-b. Series de tiempo
-c. Clasificación
-
-Aprendizaje profundo y frameworks de trabajo
-a. Aumentación de datos
-b. Redes neuronales convolucionales y aplicaciones en imágenes
-c. Aprendizaje por refuerzo
-d. Aprendizaje adversarial
-e. Difusión estable (Stable Diffusion)
-f. Redes neuronales recurrentes y transformers
-"""
 
 def run_teaching_style_analysis(course_plan):
     inputs = {
@@ -123,4 +86,5 @@ if __name__ == "__main__":
     course_syllabus = extract_text(RUTA_INPUT)
     teaching_style_analysis = run_teaching_style_analysis(course_syllabus)
     asyncio.run(async_multiple_crews(course_syllabus, teaching_style_analysis))
+    convert_results()
     # run()

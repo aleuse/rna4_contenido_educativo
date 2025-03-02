@@ -1,0 +1,26 @@
+Conocimientos Específicos
+(Programa detallado)
+
+Sistemas bioinspirados: el juego de la vida
+
+Optimización con métodos bioinspirados
+a. Algoritmos Evolutivos
+b. Colonias de hormigas
+c. Inteligencia de enjambres
+
+Introducción a las redes neuronales: el modelo de la neurona de los mamíferos
+
+Perceptrones y backpropagation
+
+Aplicación de redes neuronales a datos tabulares
+a. Regresión
+b. Series de tiempo
+c. Clasificación
+
+Aprendizaje profundo y frameworks de trabajo
+a. Aumentación de datos
+b. Redes neuronales convolucionales y aplicaciones en imágenes
+c. Aprendizaje por refuerzo
+d. Aprendizaje adversarial
+e. Difusión estable (Stable Diffusion)
+f. Redes neuronales recurrentes y transformers

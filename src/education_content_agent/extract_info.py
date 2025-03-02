@@ -1,5 +1,5 @@
 import os
-import fitz  # PyMuPDF para PDFs con texto
+import pymupdf  # PyMuPDF para PDFs con texto
 import easyocr  # OCR multilenguaje
 from pdf2image import convert_from_path  # Convierte PDF en imágenes para OCR
 from PIL import Image  # Manejo de imágenes
@@ -43,7 +43,7 @@ class DocumentExtractor:
         Si no detecta texto, usa OCR.
         """
         texto_extraido = ""
-        doc = fitz.open(ruta_pdf)
+        doc = pymupdf.open(ruta_pdf)
 
         for num_pagina in range(len(doc)):
             texto = doc[num_pagina].get_text("text")

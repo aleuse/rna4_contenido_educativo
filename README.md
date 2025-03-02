@@ -44,6 +44,18 @@ El agente deberá ser capaz de:
 - **Ubicación:** `src/education_content_agent`
 - **Descripción:** Contiene los scripts que gestionan la ejecución de los agentes y sus tareas.
 
+### 📁 **Documentos de Entrada**
+- **Ubicación:** `docs`
+- **Descripción:** En este carpeta se deben colocar los documentos de entrada.
+
+### 📁 **Temporal**
+- **Ubicación:** `temp`
+- **Descripción:** En este carpeta se crean archivos intermedios en la generación del resultado final.
+
+### 📁 **Resultado**
+- **Ubicación:** `output`
+- **Descripción:** En este carpeta se entrega el resultado final.
+
 ### ✅ **Pruebas**
 - **Ubicación:** `test`
 - **Descripción:** Contiene pruebas realizadas con diferentes modelos de lenguaje (LLMs) para evaluar el desempeño del agente.
@@ -98,7 +110,10 @@ El agente deberá ser capaz de:
     TEMPERATURE=...
     ```
 
-6. **Ejecutar el código:**
+6. **Colocar los documentos de entrada:**
+    En la carpeta `docs` colocar los documentos que se quieren usar como entrada.
+
+7. **Ejecutar el código:**
     ```bash
     python src/education_content_agent/main.py
     ```
