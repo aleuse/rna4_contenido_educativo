@@ -1,17 +1,34 @@
 #!/usr/bin/env python
 import sys
+import os
 import warnings
 import asyncio
 
-# from education_content_agent.crew import 
 from notes_objectives_crew import NotesObjectivesAgent
 from practice_problems_crew import PracticesProblemsAgent
 from discussion_questions_crew import DiscussQuestionsAgent 
 from resource_recommendation_crew import ResourceRecommendationAgent
-from quality_review_crew import QualityReviewAgent
+# from quality_review_crew import QualityReviewAgent
 from teaching_style_analysis_crew import TeachingStyleAgent
+from extract_info import DocumentExtractor
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
+
+# Crear una instancia del extractor
+extractor = DocumentExtractor(idioma='es')
+
+RUTA_INPUT = "Docs"
+
+def extract_text(ruta):
+    """
+    Extrae texto de un archivo TXT, DOCX o PDF.
+    """
+    try:
+        texto = extractor.procesar_carpeta(ruta)
+    except Exception as e:
+        raise Exception(f"Error al extraer texto de {ruta}: {e}")
+    
+    return texto
 
 def read_results():
     with open("temp/class_notes.md", "r", encoding='utf-8') as file:
@@ -65,7 +82,7 @@ e. Difusión estable (Stable Diffusion)
 f. Redes neuronales recurrentes y transformers
 """
 
-def run_teaching_style_analysis():
+def run_teaching_style_analysis(course_plan):
     inputs = {
         'course_plan': course_plan,
     }
@@ -103,6 +120,7 @@ async def async_multiple_crews(course_plan, teaching_style_analysis):
 #     QualityReviewAgent().quality_review_crew().kickoff(inputs=inputs)
 
 if __name__ == "__main__":
-    teaching_style_analysis = run_teaching_style_analysis()
-    asyncio.run(async_multiple_crews(course_plan, teaching_style_analysis))
+    course_syllabus = extract_text(RUTA_INPUT)
+    teaching_style_analysis = run_teaching_style_analysis(course_syllabus)
+    asyncio.run(async_multiple_crews(course_syllabus, teaching_style_analysis))
     # run()
