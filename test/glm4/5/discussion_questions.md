@@ -1,0 +1,8 @@
+- ¿Cómo se puede aplicar la teoría de los algoritmos evolutivos en problemas de optimización complejos, y en qué aspectos difiere del modelo tradicional de optimización?
+- En el contexto de las colonias de hormigas, discuta cómo las heurísticas aprendidas por estas pueden ser utilizadas para resolver problemas de búsqueda y optimización en la vida real.
+- Analice la evolución de los perceptrones y su relación con el algoritmo backpropagation, y explique cuál es el impacto de este en el aprendizaje de redes neuronales.
+- ¿Cuáles son las diferencias clave entre los modelos de aprendizaje supervisado, no supervisado y por refuerzo, y cómo se pueden aplicar en la práctica?
+- Discuta la importancia del aumento de datos en el aprendizaje profundo y cómo afecta a la capacidad de generalización de los modelos.
+- Explique el papel de las redes neuronales convolucionales en la clasificación de imágenes y sus aplicaciones en el campo de la visión artificial.
+- En qué aspectos se diferencia el aprendizaje adversarial del aprendizaje por refuerzo, y cuál es su relevancia en la creación de modelos avanzados de aprendizaje profundo?
+- Analice las características de las redes neuronales recurrentes y los transformers y cómo estos han impactado en el campo de la inteligencia artificial.

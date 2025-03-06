@@ -1,0 +1,1 @@
+A document containing 5-10 practice problems with step-by-step solutions, written in the same language as the course syllabus. The response is formatted in Markdown and adheres to the criteria provided.

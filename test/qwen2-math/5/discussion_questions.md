@@ -1,0 +1,5 @@
+1. How does the concept of bioinspired systems relate to optimization methods, and can you provide an example of how this relationship is applied in real-world problems?
+2. Compare and contrast the different bioinspired optimization methods covered in the course (algorithms, ant colonies, and swarms), discussing their unique features and limitations.
+3. In your own words, explain the fundamental differences between feedforward and recurrent neural networks, and discuss how these differences impact their applications.
+4. How do deep learning frameworks such as stable diffusion, transformers, and recurrent neural networks help to improve the performance of neural networks in various applications? Provide examples from the course content to support your answer.
+5. The course introduces both theoretical concepts and practical applications of bioinspired systems and neural networks. How does this mixed approach benefit students' understanding of these topics, and what are some potential challenges they might face when trying to balance theory and practice?

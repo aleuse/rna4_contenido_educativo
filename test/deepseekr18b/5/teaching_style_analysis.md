@@ -1,0 +1,1 @@
+The instructor employs a mixed approach, blending theoretical concepts with practical applications. The course structure is hierarchical, guiding students from foundational knowledge to advanced topics. The primary language is Spanish, as the syllabus is written in that tongue.
